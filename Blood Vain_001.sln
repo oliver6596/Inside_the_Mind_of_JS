@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blood Vain_001", "Blood Vain_001.csproj", "{F223554A-3A97-6A89-9DF1-EC7E733AD31F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F223554A-3A97-6A89-9DF1-EC7E733AD31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F223554A-3A97-6A89-9DF1-EC7E733AD31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F223554A-3A97-6A89-9DF1-EC7E733AD31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F223554A-3A97-6A89-9DF1-EC7E733AD31F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

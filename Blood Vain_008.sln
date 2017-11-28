@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blood Vain_008.Plugins", "Blood Vain_008.Plugins.csproj", "{90EFD1CC-9B31-577F-5621-ACAB0F74AFCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blood Vain_008", "Blood Vain_008.csproj", "{70272262-0332-9638-761B-E3A470429D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blood Vain_008.Editor.Plugins", "Blood Vain_008.Editor.Plugins.csproj", "{F0BFB557-005A-6EDF-4205-0A7F947C689D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90EFD1CC-9B31-577F-5621-ACAB0F74AFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90EFD1CC-9B31-577F-5621-ACAB0F74AFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90EFD1CC-9B31-577F-5621-ACAB0F74AFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90EFD1CC-9B31-577F-5621-ACAB0F74AFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70272262-0332-9638-761B-E3A470429D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70272262-0332-9638-761B-E3A470429D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70272262-0332-9638-761B-E3A470429D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70272262-0332-9638-761B-E3A470429D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0BFB557-005A-6EDF-4205-0A7F947C689D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0BFB557-005A-6EDF-4205-0A7F947C689D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0BFB557-005A-6EDF-4205-0A7F947C689D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0BFB557-005A-6EDF-4205-0A7F947C689D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
