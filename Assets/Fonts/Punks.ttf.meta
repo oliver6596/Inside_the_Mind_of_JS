@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3134a475a35e4f64aae19bf58e9382f6
+timeCreated: 1507382407
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Punks
+  fontNames:
+  - Punks
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

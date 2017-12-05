@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 20ecfb8cfc17d1644b6ca31d02b9e5e7
+timeCreated: 1507382542
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Punk Kid
+  fontNames:
+  - Punk Kid
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
