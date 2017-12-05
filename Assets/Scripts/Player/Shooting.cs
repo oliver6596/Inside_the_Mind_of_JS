@@ -7,16 +7,25 @@ public class Shooting : MonoBehaviour {
     // Machine Gun Variables. 
     public float machineGunWaitTime = .2f;
     bool machineGunActive = true;
+
+    // Machine gun bullet variables
     public GameObject machineGunBullet;
     public Transform machineGunSpawnPoint;
-    // Machine gun bullet variables
     GameObject machinegunBulletInstance;
     private Rigidbody bulletRB;
     public float bullVel = 75000f;
+    public float randomBulletDistance = 5000f;
+
+    //Single Shot Variables
+    public GameObject singleShotBullet;
+    public Transform singleShotGunSpawnPoint;
+
     // Lerp Variables
-    public Transform startMarker;
-    public Transform endMarker;
-    public float speed = 1.0F;
+    public Transform startMarkerHeavy;
+    public Transform endMarkerHeavy;
+    public Transform startMarkerLight;
+    public Transform endMarkerLight;
+    public float lerpSpeed = 1.0F;
     private float startTime;
     private float journeyLength;
 
@@ -24,7 +33,9 @@ public class Shooting : MonoBehaviour {
     {
         // Lerp Set up 
         startTime = Time.time;
-        journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
+        journeyLength = Vector3.Distance(startMarkerLight.position, endMarkerLight.position);
+        journeyLength = Vector3.Distance(startMarkerHeavy.position, endMarkerHeavy.position);
+
     }
 
 
@@ -43,7 +54,7 @@ public class Shooting : MonoBehaviour {
         // Input for when the RIGHT mouse button is clicked
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log("Right Click");
+            StartCoroutine(singleShotGunActive());
         }
 
         // Input for when the MIDDLE mouse button is clicked
@@ -59,14 +70,25 @@ public class Shooting : MonoBehaviour {
         machineGunActive = false;
         machinegunBulletInstance = Instantiate(machineGunBullet,machineGunSpawnPoint.transform.position, Quaternion.identity);
         bulletRB = machinegunBulletInstance.GetComponent<Rigidbody>();
-        bulletRB.AddForce(transform.forward * Random.Range((bullVel -100.0f), (bullVel + 100.0f)));
+        bulletRB.AddForce(transform.forward * Random.Range(bullVel - randomBulletDistance, bullVel + randomBulletDistance));
         //Lerp Things
-        float distCovered = (Time.time - startTime) * speed;
+        float distCovered = (Time.time - startTime) * lerpSpeed;
         float fracJourney = distCovered / journeyLength;
-        transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
+        transform.position = Vector3.Lerp(startMarkerLight.position, endMarkerLight.position, fracJourney);
         yield return new WaitForSeconds(machineGunWaitTime);
         machineGunActive = true;
     }
 
+    IEnumerator singleShotGunActive()
+    {
+        machinegunBulletInstance = Instantiate(singleShotBullet, singleShotGunSpawnPoint.transform.position, Quaternion.identity);
+        bulletRB = machinegunBulletInstance.GetComponent<Rigidbody>();
+        bulletRB.AddForce(transform.forward * Random.Range(bullVel - randomBulletDistance, bullVel + randomBulletDistance));
+        //Lerp Things
+        float distCovered = (Time.time - startTime) * lerpSpeed;
+        float fracJourney = distCovered / journeyLength;
+        transform.position = Vector3.Lerp(startMarkerHeavy.position, endMarkerHeavy.position, fracJourney);
+        yield return new WaitForSeconds(machineGunWaitTime);
+    }
 
 }
