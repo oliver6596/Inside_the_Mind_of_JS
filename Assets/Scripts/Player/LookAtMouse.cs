@@ -10,8 +10,6 @@ public class LookAtMouse : MonoBehaviour
     int floorMask;
     Vector3 newPos;
     Vector2 inputVector;
-    public float movePower = 10f;
-    public float slowPower = .4f;
 
     // Use this for initialization
     void Start()
@@ -54,6 +52,7 @@ public class LookAtMouse : MonoBehaviour
             // Set the player's rotation to this new rotation.
             playerRigidbody.MoveRotation(newRotation);
         }
+
     }
 
 }
